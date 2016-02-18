@@ -13,7 +13,9 @@ npm install --save has-element-selector
 ```javascript
 var hasElementSelector = require('has-element-selector')
 
-hasElementSelector()  // => true
+hasElementSelector('input')  // => true
+hasElementSelector('#foo ul.bar')  // => true
+hasElementSelector('#foo .bar.baz')  // => false
 ```
 
 ## License
